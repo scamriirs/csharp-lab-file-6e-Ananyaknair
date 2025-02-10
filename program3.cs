@@ -11,7 +11,7 @@ class Program
 
     static void Main()
     {
-        double number = 5.75;
+        double number = 6.85;
         double fractionalPart;
 
         GetFractionalPart(number, out fractionalPart);
