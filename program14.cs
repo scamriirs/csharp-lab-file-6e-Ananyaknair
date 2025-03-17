@@ -1,4 +1,5 @@
 write a program to show the concept of indexer
+
 using System;
 
 class MyCollection
@@ -7,20 +8,8 @@ class MyCollection
 
     public int this[int index]
     {
-        get
-        {
-            if (index >= 0 && index < arr.Length)
-                return arr[index];
-            else
-                throw new IndexOutOfRangeException("Index out of range");
-        }
-        set
-        {
-            if (index >= 0 && index < arr.Length)
-                arr[index] = value;
-            else
-                throw new IndexOutOfRangeException("Index out of range");
-        }
+        get { return arr[index]; }
+        set { arr[index] = value; }
     }
 }
 
